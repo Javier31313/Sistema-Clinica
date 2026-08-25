@@ -10,7 +10,7 @@ document.addEventListener('submit', (e) => {
     .then(response => response.json())
     .then(data => {
         if(data.res)
-            window.location = '/dashboard';//cargar una pagina diferente
+            window.location = '/clientes';//cargar una pagina diferente
          else {
             if(data.message == 'Usuario incorrecto') {
                 ui = document.getElementById('user-info');
