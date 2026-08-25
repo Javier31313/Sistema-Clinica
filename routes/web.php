@@ -17,9 +17,9 @@ Route::get('/logout' , [LoginController::class , 'cerrar_sesion']);
 
 Route::get('/clientesD', [ClientesController::class, 'index2']); //el douplicado
 
-Route::get('/clientes', [ClientesController::class, 'index']);
+Route::get('/clientes', [ClientesController::class, 'index']); 
 
-Route::get('clientes/obtener_clientes', [ClientesController::class, 'obtener_registros']);
+Route::post('/clientes/obtener_clientes', [ClientesController::class, 'obtener_clientes']);
 
 
 
