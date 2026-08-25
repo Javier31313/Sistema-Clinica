@@ -14,16 +14,16 @@ $(function () {
         iconSet: "fontAwesome",
         mtype: "POST",
         colModel: [ // Establece la estructura de la tabla dinamica
-            { label: 'NRC', name: 'id', index: 'nrc', width: 100 },
+            /*{ label: 'ID', name: 'id', index: 'id', width: 100 },*/
             { label: 'NOMBRE DE LA EMPRESA', name: 'nombre_empresa', index: 'nombre_empresa', width: 300 },
             { label: 'CORREO EMPRESARIAL', name: 'correo_empresarial', index: 'correo_empresarial', width: 250 },
-            { label: 'TELEFONO EMPRESA', name: 'telefono_empresa', index: 'telefono_empresa', width: 120, align: "center" },
+            { label: 'TELEFONO EMPRESA', name: 'telefono_empresa', index: 'telefono_empresa', width: 220, align: "center" },
             { label: 'CONTACTO', name: 'persona_contacto', index: 'persona_contacto', width: 250 },
-            { label: 'TELÉFONO', name: 'correo_contacto', index: 'telefono_contacto', width: 120, align: "center" },
-            { label: 'CORREO ELECTRÓNICO', name: 'telefono_contacto', index: 'correo_contacto', width: 400 },
-            { label: 'CORREO ELECTRÓNICO', name: 'celular_contacto', index: 'correo_contacto', width: 400 },
-            { label: 'CORREO ELECTRÓNICO', name: 'fecha_creacion', index: 'correo_contacto', width: 400 },
-            { label: 'CORREO ELECTRÓNICO', name: 'fecha_modificacion', index: 'correo_contacto', width: 400 }
+            { label: 'CONTACTO CORREO', name: 'correo_contacto', index: 'correo_contacto', width: 220, align: "center" },
+            { label: 'TELEFONO CONTACTO', name: 'telefono_contacto', index: 'telefono_contacto', width: 400 },
+            { label: 'CELULAR CONTACTO', name: 'celular_contacto', index: 'celular_contacto', width: 400 },
+            { label: 'FECHA DE CREACION', name: 'fecha_creacion', index: 'fecha_creacion', width: 400 },
+            { label: 'FECHA DE MODIFICACION', name: 'fecha_modificacion', index: 'fecha_modificacion', width: 400 }
 
         ],
         shrinkToFit: false,
