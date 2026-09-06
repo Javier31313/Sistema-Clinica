@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C9D9E6;
+    
+    /* PARA USAR UNA IMAGEN DE FONDO, DESCOMENTA LA SIGUIENTE LÍNEA Y CAMBIA LA RUTA */
+    /* background: url('../img/fondo formulario framework.jpg') no-repeat center center/cover; */
+    
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Formas de fondo para efecto Glassmorphism */
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.shape-blue {
+    width: 350px;
+    height: 350px;
+    background-color: #97b2f1;
+    top: -100px;
+    left: -100px;
+}
+
+.shape-orange {
+    width: 400px;
+    height: 400px;
+    background-color: #757F99;
+    bottom: -150px;
+    right: -100px;
+}
+
+/* Contenedor principal con Glassmorphism */
+.glass-form {
+    background: #94A9BE;
+
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-text {
+    color: #274285;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.form-header h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-header p {
+    font-size: 0.85rem;
+    color: #3b404d;
+}
+
+/* Estilos de inputs */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    color: #3b404d;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    background: #C9D9E6;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 12px 16px;
+    transition: 0.3s ease;
+}
+
+.input-box:focus-within {
+    border-color: #3b82f6;
+    background: rgba(31, 37, 54, 0.8);
+}
+
+.input-box i {
+    color: #64748b;
+    font-size: 1rem;
+}
+
+.input-box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding-left: 12px;
+    font-size: 0.95rem;
+}
+
+.input-box input::placeholder {
+    color: #475569;
+}
+
+.toggle-icon {
+    cursor: pointer;
+    color: #64748b;
+    padding-left: 10px;
+}
+
+.toggle-icon:hover {
+    color: #cbd5e1;
+}
+
+/* Opciones extras */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 0.85rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #3b404d;
+    cursor: pointer;
+}
+
+
+.forgot-link {
+    color: #3b404d;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.forgot-link:hover {
+    color: #3b82f6;
+    text-decoration: underline;
+}
+
+/* Botón principal */
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background-color: #757F99;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+}
+
+/* Footer de formulario */
+.form-footer {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 0.85rem;
+    color: #365888;
+}
+
+.form-footer a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+.hide {
+    display: none;
+}
